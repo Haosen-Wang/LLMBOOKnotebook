@@ -64,7 +64,5 @@ if __name__=='__main__':
     nltk.download('gutenberg')
     # 获取文本
     text = gutenberg.words('austen-emma.txt')
-    #print(text)
     WordPiece=WordPiecetokenize(text[:300])
     print(WordPiece.encode_with_wordpiece())
-    #print(BPE.tokenize())
