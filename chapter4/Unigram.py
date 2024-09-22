@@ -89,10 +89,6 @@ class Unigramtokenize:
             log_dict={token:-log(float(count)/total_sum) for token, count in self.vocab_initial.items()}
         return self.vocab_initial
             
-
-                    
-        
-
 if __name__=='__main__':
     import nltk
     from nltk.corpus import gutenberg
